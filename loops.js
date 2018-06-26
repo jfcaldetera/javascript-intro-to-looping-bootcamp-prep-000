@@ -15,15 +15,15 @@ function whileLoop(number)
   return "done"
 }
 
-function maybeTrue() 
+function maybeTrue()
 {
   return Math.random() >= 0.5
 }
 
 function doWhileLoop(array)
 {
-  do 
+  do
   {
-    
-  } while (maybeTrue())
+    array.shift()
+  } while (array.length == 0 || maybeTrue())
 }
